@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/reg.css" />
+	</head>
+	<body>
+		<div class="jayChou">
+			<div id="regBox">
+				<form action="login.php" method="post">
+					<div class="errorBox">
+						<a><i></i></a>
+					</div>
+					<h2>三星账户</h2>
+					<div class="muchBox">
+							<div class="nameBox">	
+								<lable>电子邮箱或手机号码</lable>
+								<input type="text" placeholder = "电子邮箱或手机号码"  name="username" id="username"/>	
+							</div>
+							<div class="nameBox" id="name01">
+								<lable>请输入密码密码</lable>
+								<input type="password" placeholder = "请输入密码"  name="userpass" id="password" />		
+								<p id="loginError" value="登录失败，账号与密码不匹配">登录失败，账号或密码不正确</p>					
+							</div>										
+						<div class="remeBox" id="name02">
+							<input type="checkbox"  id="checkCookie" name="checkCookie"/><span>记住我的ID</span>
+						</div>
+						<div class="regImg">
+							<img src="img/reg.jpg"/>
+						</div>
+						<div class="submitBox">
+							<input type="submit"  id="jane" value="登录" />
+						</div>
+						<div class="superBox">
+							<a href = "#">查找 ID或重置密码？</a><span>或</span><a href = "reg.html">
+		 点此注册</a>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
+<script type="text/javascript" src="js/cssTools.js"></script>
+<script type="text/javascript" src="js/tools.js"></script>
+<script type="text/javascript" src="js/samsungEffect.js"></script>
+<script type="text/javascript" src="js/move1808.js"></script>
+<script type="text/javascript"  src="js/cookieTools.js"></script>
+<script type="text/javascript">
+	window.onload = function(){
+	//登录验证
+		/*$("#jane").onclick = function(){
+			let xhr = new XMLHttpRequest();
+			xhr.open("post","login.php",true);
+
+			xhr.onreadystatechange = function(){
+				if(xhr.readyState == 4 && xhr.status==200){
+				// xhr.responsedText;
+					if(xhr.responseText=="0"){
+						$("#loginSpan").style.display = "block";
+					}else{
+						//将登录成功的用户名保存到cookie中
+						addCookie("username","$username".value,7);
+						location.href = "samsungIndex.html";
+					}
+				}
+			}
+			xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+			let htmlstr="username="+$("#username").value+"&userpass="+$("#userpass").value;
+			xhr.send(htmlstr);
+//			xhr.send();
+		}*/
+		
+		
+		//勾选记住我的ID，7天免登陆
+		/*$('#username').value = getCookie('username');
+		$('#password').value = getCookie('userpass');
+		$('#checkCookie').onclick = function(){
+			let username = $('#username').value;
+			let userpass = $('#password').value;
+			let temp = $('.checkCookie')[0];
+			if(temp.checked){
+				var d = new Date();
+				var nowTime = d.getTime();
+				nowTime += 7*24*60*60*1000;
+				d.setTime(nowTime);
+				document.cookie = "username"+username+";expires="+d;
+				document.cookid = "password"+userpass+";expires="+d;
+			}
+		}*/
+		
+		//登陆 成功后将用户名保存到cookie中
+		$("#jane").onclick = function(){
+			addCookie("username","$username".value,7);
+		}
+		
+		
+	}
+
+	
+</script>

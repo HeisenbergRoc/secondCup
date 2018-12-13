@@ -1,0 +1,143 @@
+body,p,dl,dd,ul,ol,li,div,h1,h2,h3,h4,h5,h6,form,input,table,tr,td{
+	margin:0;
+	padding:0;
+	}
+html,body{
+	width:100%;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style:none;
+}
+section{
+	width:100%;
+}
+#shopList{
+	width:100%;
+	
+}
+.choseList{
+	width:1220px;
+	margin:0 auto;	
+	padding:25px 30px;
+}
+.choseList li{
+	display:inline-block;
+	margin-right:10px;
+	float:left;
+}
+#leftList{
+	width:90%;
+	margin:0 auto;
+	position:relative;
+}
+#leftList:after{
+	content:"";
+	display:block;
+	clear:both;
+	height:0;
+	overflow:hidden;
+	visibility:hidden;
+}
+#leftList{
+	
+}
+.leftGoods{
+	width:20%;
+	float: left;
+    height: auto;
+}
+.asideLeft{
+	border:10px solid #eee;
+	box-sizing:border-box;
+}
+.asideLeft li{
+	line-height:50px;
+	font-size:18px;
+	margin-left:20px;
+}
+.asideLeft p{
+	background-color:#ccc;
+	border:15px solid #ccc;
+	color: #1428a0;
+    font-weight: bold;
+}
+.asideLeft:nth-child(1){
+	border-top:none;
+}
+.asideLeft input{
+	width:20px;
+	height:20px;
+}
+.colorBox:after{
+	content:"";
+	display:block;
+	clear:both;
+	height:0;
+	overflow:hidden;
+	visibility:hidden;
+}
+.colorBox a{
+	width:30px;
+	height:30px;
+	display:inline-block;
+	border:1px solid black;
+	float:left;
+	margin:10px;
+}
+.rightGoods{
+    width: 75%;
+    float: left;   
+}
+.rowSpan{
+	position:absolute;
+    left: 35px;
+    top: 0px;
+    width:75%;
+    margin-left:20%;
+}
+.rowsLeft{
+	font-size: 20px;
+    font-weight: bold;
+    line-height: 60px;
+}
+.rowsRight{
+	float:right;
+    margin: -45px 0px 0px;
+}
+.rowsRight ul{
+	display:inline-block;
+	font-size: 16px;
+}
+.rowsRight li{
+	display:inline-block;
+	border:1px solid #ddd;
+	padding:10px;
+}
+.bigphotoBox{
+	width:75%;
+	display: flex;
+	justify-content: center;	
+	margin:80px 0px;
+	margin-left:15%;
+}
+.photoBox{
+	margin-left:30px;
+	vertical-align: top;
+    font-size: 14px;
+}
+.fiveBox{
+	text-align:center;
+}
+.fiveBox a{
+	width: 160px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: normal;
+    margin: 7px auto 0;
+    color: #fff;
+    background-color: #006ec5;
+    display:block;
+}

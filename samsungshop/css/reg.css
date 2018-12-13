@@ -1,0 +1,118 @@
+.jayChou{
+	width:100%;
+	background-color:#eee;
+}
+#regBox{
+	width:600px;
+	padding:60px 0;
+	margin:0 auto;
+	position:relative;
+	background-color:white;
+}
+#regBox h2{
+	margin-bottom: 10px;
+    color: #1428a0;
+    font-weight: bold;
+    font-size: 40px;
+    margin-left:40px;
+}
+.nameBox{
+	display: block;
+    position: relative;
+    
+}
+.nameBox input{
+	border:none;
+	color:black;
+	width:100%;   
+	font-size:25px;
+	border-bottom:2px solid #ccc;
+	margin-top:40px;
+	outline:none;
+}
+.nameBox lable{
+	color:#1428a0;
+	font-size:14px;
+	display: block;
+    padding-top: 10px;
+	/*display:none;*/
+}
+.nameBox :hover lable:{
+	display:block;
+}
+.remeBox{
+	font-size:20px;
+	color:black;
+	margin-top:40px;
+}
+.remeBox input{
+	width:20px;
+	height:20px;
+	margin-right:20px;
+}
+.regImg{
+	width:100%;
+	box-sizing:border-box;
+	margin:30px auto 30px;
+}
+.muchBox{
+	padding:10px 40px;
+}
+.regImg img{
+	width:100%;
+	/*height:200px;*/
+	margin:0 auto;
+}
+.superBox{
+	width:32%;
+	margin:0 auto;
+	font-size:16px;
+	color:#1428a0;
+}
+.superBox span{
+	margin:5%;
+}
+.submitBox{
+	margin:20px auto;
+	/*border:1px solid black;
+	border-radius:5px;*/
+	width:160px;
+}
+.submitBox input{
+	/*margin:20px auto;*/
+	width:160px;
+	height:50px;
+	line-height:40px;
+	border-radius:5px;
+	border:1px solid black;
+}
+.errorBox{
+	position:absolute;
+	background-image:url("../img/btn_close.png");
+    background-size: 24px;
+    top: 60px;
+    right: 50px;
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    cursor: pointer;
+}
+#serictBox ul{
+	margin:20px auto;
+	padding-left:110px;
+}
+#serictBox li{
+	display: inline-block;
+	border: 1px solid #999999;
+	line-height: 30px;
+	padding: 0 30px;
+	margin-right: 10px;	
+}
+#serictBox li.act{
+	background: blue;
+	color: white;
+}
+#loginError{
+	color:red;
+	display:none;
+}
